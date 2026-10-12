@@ -8,7 +8,7 @@ const ForWho = () => {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-10 right-0 h-80 w-80 rounded-full bg-violet-600/[0.06] blur-[120px]"
+        className="pointer-events-none absolute top-10 right-0 h-80 w-80 rounded-full bg-violet-600/6 blur-[120px]"
       />
 
       <div className="relative mx-auto max-w-5xl">
@@ -31,7 +31,7 @@ const ForWho = () => {
         {/* Fit comparison */}
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
           {/* Good fit */}
-          <div className="rounded-3xl border border-emerald-400/20 bg-gradient-to-br from-emerald-400/[0.06] to-[#0a0a0a] p-6 sm:p-8">
+          <div className="rounded-3xl border border-emerald-400/20 bg-linear-to-br from-emerald-400/6 to-[#0a0a0a] p-6 sm:p-8">
             <div className="flex items-center gap-3">
               <span className="flex size-8 items-center justify-center rounded-full bg-emerald-400/10 text-emerald-400">
                 <svg
@@ -75,7 +75,7 @@ const ForWho = () => {
           </div>
 
           {/* Not a fit */}
-          <div className="rounded-3xl border border-rose-400/20 bg-gradient-to-br from-rose-400/[0.04] to-[#0a0a0a] p-6 sm:p-8">
+          <div className="rounded-3xl border border-rose-400/20 bg-linear-to-br from-rose-400/4 to-[#0a0a0a] p-6 sm:p-8">
             <div className="flex items-center gap-3">
               <span className="flex size-8 items-center justify-center rounded-full bg-rose-400/10 text-rose-400">
                 <svg

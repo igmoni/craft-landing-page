@@ -3,13 +3,13 @@ import { problems } from "@/data/common";
 const Problem = () => {
   return (
     <section
-      id="why"
+      id="problem"
       className="relative overflow-hidden bg-[#050505] px-4 py-24 text-white sm:px-6 sm:py-32"
     >
       {/* Subtle background glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-0 left-1/2 -z-0 h-80 w-[40rem] -translate-x-1/2 rounded-full bg-violet-600/[0.07] blur-[120px]"
+        className="pointer-events-none absolute top-0 left-1/2 z-0 h-80 w-160 -translate-x-1/2 rounded-full bg-violet-600/[0.07] blur-[120px]"
       />
 
       <div className="relative z-10 mx-auto max-w-5xl">
@@ -34,13 +34,13 @@ const Problem = () => {
         </div>
 
         {/* Problem cards */}
-        <div className="mt-12 grid overflow-hidden rounded-3xl border border-white/[0.08] bg-[#0a0a0a] md:grid-cols-3">
+        <div className="mt-12 grid overflow-hidden rounded-3xl border border-white/8 bg-[#0a0a0a] md:grid-cols-3">
           {problems.map((problem, index) => (
             <article
               key={problem.number}
-              className={`group p-6 transition-colors duration-300 hover:bg-white/[0.025] sm:p-7 ${
+              className={`group p-6 transition-colors duration-300 hover:bg-white/2.5 sm:p-7 ${
                 index !== 0
-                  ? "border-t border-white/[0.08] md:border-t-0 md:border-l"
+                  ? "border-t border-white/8 md:border-t-0 md:border-l"
                   : ""
               }`}
             >
@@ -62,10 +62,10 @@ const Problem = () => {
         </div>
 
         {/* Founder story */}
-        <div className="relative mt-10 overflow-hidden rounded-3xl border border-violet-400/10 bg-gradient-to-br from-[#111019] via-[#0d0d12] to-[#090909] p-6 sm:p-10 md:p-12">
+        <div className="relative mt-10 overflow-hidden rounded-3xl border border-violet-400/10 bg-linear-to-br from-[#111019] via-[#0d0d12] to-[#090909] p-6 sm:p-10 md:p-12">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -top-24 right-0 h-64 w-64 rounded-full bg-violet-600/[0.08] blur-[100px]"
+            className="pointer-events-none absolute -top-24 right-0 h-64 w-64 rounded-full bg-violet-600/8 blur-[100px]"
           />
 
           <div className="relative max-w-4xl">
@@ -92,7 +92,7 @@ const Problem = () => {
             </p>
 
             <p className="mt-7 text-sm font-medium text-violet-300">
-             Mohan, engineer & creator of Craft
+              Mohan, engineer & creator of Craft
             </p>
           </div>
         </div>

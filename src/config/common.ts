@@ -17,3 +17,9 @@ export const navItems = [
 ];
 
 export const framworks = ["Next.js", "Vite", "Express"];
+
+export const footerLinks = [
+  { label: "Why Craft", href: "#problem" },
+  { label: "How it works", href: "#how" },
+  { label: "FAQ", href: "#faq" },
+];
