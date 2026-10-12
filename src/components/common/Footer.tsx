@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { footerLinks } from "@/config/common";
+import { CopyrightYear } from "@/config/CopyRightYear";
 
 const Footer = () => {
   return (
@@ -111,7 +112,7 @@ const Footer = () => {
           {/* Bottom bar */}
           <div className="mt-12 flex flex-col gap-4 border-t border-white/8 pt-6 sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-neutral-500">
-              © {new Date().getFullYear()} Craft. All rights reserved.{" "}
+            <CopyrightYear />
             </p>
 
             <p className="text-xs text-neutral-500">
