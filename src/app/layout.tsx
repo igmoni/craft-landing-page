@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://craft.vercel.app"),
+  metadataBase: new URL("https://craftship-v1.vercel.app"),
 
   title: {
     default: "Craft — Stop Setting Up. Start Building.",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description:
       "Your stack. Your workflow. Less repetitive setup. Scaffold your next web project with Craft.",
     siteName: "Craft",
-    url: "https://craft.vercel.app",
+    url: "https://craftship-v1.vercel.app",
     images: [
       {
         url: "/og.png",
