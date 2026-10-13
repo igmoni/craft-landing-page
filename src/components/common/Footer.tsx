@@ -8,7 +8,7 @@ import { CopyrightYear } from "@/config/CopyRightYear";
 
 const Footer = () => {
   return (
-    <footer className="relative h-[95vh] overflow-hidden bg-[#050505] px-4 pt-20 pb-8 text-white sm:px-6 sm:pt-28">
+    <footer className="relative min-h-[95vh] overflow-hidden bg-[#050505] px-4 pt-20 pb-8 text-white sm:px-6 sm:pt-24">
       {/* Oversized background wordmark */}
       <div
         aria-hidden="true"
@@ -22,7 +22,7 @@ const Footer = () => {
         className="pointer-events-none absolute top-24 left-1/2 h-80 w-2xl -translate-x-1/2 rounded-full bg-violet-600/[0.07] blur-[120px]"
       />
 
-      <div className="relative top-24 mx-auto max-w-6xl">
+      <div className="relative mx-auto max-w-6xl sm:top-24">
         {/* Main footer panel */}
         <div className="rounded-4xl border border-white/9 bg-[#0b0b0d]/95 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-10 md:p-14">
           <div className="grid gap-12 md:grid-cols-[1fr_auto] md:gap-16">
@@ -34,7 +34,7 @@ const Footer = () => {
                   height={50}
                   alt="Craft Logo"
                   src={"/logo.png"}
-                   className="rounded-xl"
+                  className="rounded-xl"
                 />
 
                 <span className="text-2xl font-semibold tracking-tight">
@@ -112,7 +112,7 @@ const Footer = () => {
           {/* Bottom bar */}
           <div className="mt-12 flex flex-col gap-4 border-t border-white/8 pt-6 sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-neutral-500">
-            <CopyrightYear />
+              <CopyrightYear />
             </p>
 
             <p className="text-xs text-neutral-500">
